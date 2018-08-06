@@ -1,0 +1,14 @@
+alpha=0.5
+delta=0
+nAgent=1000
+productRatingThreeshold=4
+minProducts=1
+top_k=30
+ncores=12
+paral=1
+debug=0
+rep-file=reliability-graph-generator/greputation.txt
+rel-file=reliability-graph-generator/greliability.txt
+rating-file=reliability-graph-generator/grating.txt
+groups-file=reliability-graph-generator/ggroups.txt
+sim-key=gtest

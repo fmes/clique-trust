@@ -1,0 +1,10 @@
+first=2
+med=8
+fq=7
+min=6
+max=10
+tq=9
+xlabel="{/Symbol D}"
+ylabel=Recall
+deltax=0.05
+deltay=0.01

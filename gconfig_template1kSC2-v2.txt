@@ -1,0 +1,10 @@
+nAgent=1000
+minProducts=1
+ncores=12
+paral=1
+debug=0
+rep-file=v2genNetworkSC2/greputation.txt
+rel-file=v2genNetworkSC2/greliability.txt
+rating-file=v2genNetworkSC2/grating.txt
+groups-file=v2genNetworkSC2/ggroups.txt
+sim-key=v2GTEST1kSC2

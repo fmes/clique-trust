@@ -1,0 +1,11 @@
+#set key ins vert center top spacing 1.0
+set terminal postscript enhanced font "/usr/share/fonts/truetype/freefont/FreeSerif.ttf,28"
+set key out horiz top center
+set bars 4.0
+set style fill empty
+set title '_TITLE'
+set xtics rotate by 45 right
+plot '_DATA_FILE' using (column(0)):3:2:6:5:xtic(1) with candlesticks lt -1 lw 1 title 'quartiles' whiskerbars,'' using (column(0)):4:4:4:4:xtic(1)  with candlesticks lt -1 lw 4 title 'median'
+set xr [GPVAL_DATA_X_MIN-1:GPVAL_DATA_X_MAX+1]
+set output "_OUTPUT.eps"
+replot
