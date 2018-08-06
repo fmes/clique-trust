@@ -2,6 +2,19 @@
 
 - src/: java source files (Simulator and BronKerbosch algorithm)
 - lib/:  java libraries
+- reliability-graph-generator: contains the file gen_dataset.m to generate the reliability graph and the dataset 
+about the rating. There are also some examples about the possible generation of a reliability 
+graph. 
+
+- runCliques.sh -- run the BronKerbosch algorithm on an existing reliability graph. 
+It takes various argument from the command line.
+
+```console
+fmessina@fmessina-ThinkPad-X250:~$ bash runCliques.sh 
+Usage: BronKerboschCliqueFinder <num_agents> <trust_file> <out_file> <minCliqueSize> <MaxCliqueSize> 
+(given  0 parameters)
+```
+
 - run.sh: run a single simulation (the recommender system), take as parameter a single configuration file
 - config_example.txt -- an example of configuration file (simulation parameters)
 
@@ -16,15 +29,6 @@ The first column of the file is the user ID, the second column is the measured P
 config_example.txt). Moreover, the simulation will compute the file containing all the values of reputation, with 
 the path specified in the configuration file. It will leave also a file containing the 
 computed trust matrix (e.g.: gtest_trust_ALPHA_0.5_DELTA_0.0.txt).
-
-- runCliques.sh -- run the BronKerbosch algorithm on an existing network. 
-It takes various argument from the command line.
-
-```console
-fmessina@fmessina-ThinkPad-X250:~$ bash runCliques.sh 
-Usage: BronKerboschCliqueFinder <num_agents> <trust_file> <out_file> <minCliqueSize> <MaxCliqueSize> 
-(given  0 parameters)
-```
 
 - compute_trust_alpha_delta_GTEST.sh: a script to run a number of simulations for different values 
 of the paramaters alpha, Delta, threeshold (xi) and k (the maximum size of the set top_x^k). 
