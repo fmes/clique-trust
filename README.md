@@ -6,7 +6,7 @@
 - config_example.txt -- an example of configuration file (simulation parameters)
 
 ```console 
-fmessina@fmessina-ThinkPad-X250:~/CloudStation/clique-trust.git/trunk$ bash run.sh 
+fmessina@fmessina-ThinkPad-X250:~$ bash run.sh 
 Usage: run.sh <config_file>
 ```
 
@@ -21,7 +21,7 @@ computed trust matrix (e.g.: gtest_trust_ALPHA_0.5_DELTA_0.0.txt).
 It takes various argument from the command line.
 
 ```console
-fmessina@fmessina-ThinkPad-X250:~/CloudStation/clique-trust.git/trunk$ bash runCliques.sh 
+fmessina@fmessina-ThinkPad-X250:~$ bash runCliques.sh 
 Usage: BronKerboschCliqueFinder <num_agents> <trust_file> <out_file> <minCliqueSize> <MaxCliqueSize> 
 (given  0 parameters)
 ```
@@ -31,7 +31,7 @@ of the paramaters alpha, Delta, threeshold (xi) and k (the maximum size of the s
 The script requires, as input, a simulation key and a configuration template.  
 
 ```console 
-fmessina@fmessina-ThinkPad-X250:~/CloudStation/clique-trust.git/trunk$  bash compute_trust_alpha_delta_GTEST.sh 
+fmessina@fmessina-ThinkPad-X250:~$  bash compute_trust_alpha_delta_GTEST.sh 
 Usage compute_trust_alpha_delta_GTEST.sh <simkey> <template_file>
 ```
 
